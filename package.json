@@ -1,6 +1,6 @@
 {
   "name": "@ondraz/puppetmaster",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Puppeteer utility module for web automation.",
   "main": "dist/index.js",
   "keywords": [
