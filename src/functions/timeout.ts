@@ -4,3 +4,5 @@ async function timeout(seconds: number = 5) {
     setTimeout(resolve, milliseconds)
   })
 }
+
+export {timeout}

@@ -1,3 +1,5 @@
 const PAGE_OPTS = {
   DEFAULT_TIMEOUT: 10000,
 }
+
+export {PAGE_OPTS}

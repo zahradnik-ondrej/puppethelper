@@ -1,5 +1,6 @@
 import {Page} from 'puppeteer'
 import chai from 'chai'
+import {getText} from './getText'
 import {SelectorNotFound} from '../errors/SelectorNotFound'
 
 async function expectText(page: Page, selector: string, text: string): Promise<void> {
