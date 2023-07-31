@@ -1,0 +1,35 @@
+{
+  "name": "puppetmaster",
+  "version": "1.0.0",
+  "description": "A Puppeteer utility module for web automation.",
+  "main": "index.js",
+  "keywords": [
+    "qa",
+    "puppeteer",
+    "chai",
+    "automation",
+    "browser"
+  ],
+  "homepage": "https://github.com/zahradnik-ondrej/puppetmaster#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zahradnik-ondrej/puppetmaster.git"
+  },
+  "author": {
+    "name": "Ondrej Zahradnik",
+    "email": "zahradnik.ondrej@protonmail.com",
+    "url": "https://ondrejzahradnik.cz"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zahradnik-ondrej/puppetmaster/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "puppeteer": "^latest-version",
+    "chai": "^latest-version"
+  }
+}

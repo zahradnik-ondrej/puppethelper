@@ -1,0 +1,3 @@
+const PAGE_OPTS = {
+  DEFAULT_TIMEOUT: 10000,
+}
