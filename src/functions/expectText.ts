@@ -14,3 +14,5 @@ async function expectText(page: Page, selector: string, text: string): Promise<v
     }
   }
 }
+
+export {expectText}

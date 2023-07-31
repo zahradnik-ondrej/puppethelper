@@ -8,3 +8,5 @@ async function clear(page: Page, selector: string): Promise<void> {
     }
   }, selector)
 }
+
+export {clear}
