@@ -8,3 +8,5 @@ async function waitForSelector(page: Page, selector: string): Promise<void> {
     throw new SelectorNotFound(`Couldn't find selector: ${selector}`)
   }
 }
+
+export {waitForSelector}
