@@ -1,6 +1,6 @@
 {
-  "name": "@ondraz/puppetmaster",
-  "version": "1.1.2",
+  "name": "puppethelper",
+  "version": "1.1.3",
   "description": "A Puppeteer utility module for web automation.",
   "main": "dist/index.js",
   "keywords": [
@@ -10,10 +10,10 @@
     "automation",
     "browser"
   ],
-  "homepage": "https://github.com/zahradnik-ondrej/puppetmaster#readme",
+  "homepage": "https://github.com/zahradnik-ondrej/puppethelper#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zahradnik-ondrej/puppetmaster.git"
+    "url": "https://github.com/zahradnik-ondrej/puppethelper.git"
   },
   "author": {
     "name": "Ondrej Zahradnik",
@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zahradnik-ondrej/puppetmaster/issues"
+    "url": "https://github.com/zahradnik-ondrej/puppethelper/issues"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
