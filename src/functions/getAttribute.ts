@@ -1,6 +1,6 @@
 import {Page} from 'puppeteer'
 import {SelectorNotFound} from '../errors/SelectorNotFound'
-import {waitForSelector} from "./waitForSelector"
+import {waitForSelector} from './waitForSelector'
 
 async function getAttribute(page: Page, selector: string, attribute: string): Promise <string | null> {
     await waitForSelector(page, selector)

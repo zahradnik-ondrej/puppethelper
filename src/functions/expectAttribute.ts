@@ -1,5 +1,5 @@
 import {Page} from 'puppeteer'
-import {getAttribute} from "./getAttribute";
+import {getAttribute} from './getAttribute'
 import {SelectorNotFound} from '../errors/SelectorNotFound'
 
 async function expectAttribute(page: Page, selector: string, attribute: string, text: string): Promise<void> {

@@ -1,5 +1,5 @@
 import {Page} from 'puppeteer'
-import {waitForSelector} from "./waitForSelector"
+import {waitForSelector} from './waitForSelector'
 
 async function clear(page: Page, selector: string): Promise<void> {
   await waitForSelector(page, selector)
