@@ -13,6 +13,7 @@ async function waitForSelector(page: Page, selector: string, timeout: number = 6
         throw new SelectorNotFound(`Couldn't find selector: ${selector}`)
       }
     }
+    break
   }
 }
 
