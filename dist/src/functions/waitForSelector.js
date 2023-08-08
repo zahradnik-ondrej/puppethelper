@@ -15,6 +15,7 @@ async function waitForSelector(page, selector, timeout = 60) {
                 throw new SelectorNotFound_1.SelectorNotFound(`Couldn't find selector: ${selector}`);
             }
         }
+        break;
     }
 }
 exports.waitForSelector = waitForSelector;
