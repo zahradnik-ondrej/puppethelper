@@ -3,8 +3,9 @@ import {SelectorNotFound} from '../errors/SelectorNotFound'
 import {waitForSelector} from "./waitForSelector"
 
 async function getAttribute(page: Page, selector: string, attribute: string): Promise <string | null> {
+    await waitForSelector(page, selector)
+
     try {
-        await waitForSelector(page, selector)
         return await page.$eval(selector, (element: Element, attribute: string) => {
             return element.getAttribute(attribute)
         }, attribute)
