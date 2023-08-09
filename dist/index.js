@@ -24,5 +24,6 @@ __exportStar(require("./src/functions/expectText"), exports);
 __exportStar(require("./src/functions/getAttribute"), exports);
 __exportStar(require("./src/functions/getText"), exports);
 __exportStar(require("./src/functions/randomInt"), exports);
+__exportStar(require("./src/functions/setAttribute"), exports);
 __exportStar(require("./src/functions/timeout"), exports);
 __exportStar(require("./src/functions/waitForSelector"), exports);
