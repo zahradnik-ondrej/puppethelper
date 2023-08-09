@@ -16,6 +16,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./src/constants/BROWSER_OPTS"), exports);
 __exportStar(require("./src/constants/PAGE_OPTS"), exports);
+__exportStar(require("./src/errors/CustomError"), exports);
 __exportStar(require("./src/errors/SelectorNotFound"), exports);
 __exportStar(require("./src/functions/clear"), exports);
 __exportStar(require("./src/functions/expectAttribute"), exports);

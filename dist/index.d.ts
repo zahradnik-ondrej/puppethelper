@@ -1,5 +1,6 @@
 export * from './src/constants/BROWSER_OPTS';
 export * from './src/constants/PAGE_OPTS';
+export * from './src/errors/CustomError';
 export * from './src/errors/SelectorNotFound';
 export * from './src/functions/clear';
 export * from './src/functions/expectAttribute';
