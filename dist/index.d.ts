@@ -8,6 +8,5 @@ export * from './src/functions/expectText';
 export * from './src/functions/getAttribute';
 export * from './src/functions/getText';
 export * from './src/functions/randomInt';
-export * from './src/functions/setAttribute';
 export * from './src/functions/timeout';
 export * from './src/functions/waitForSelector';
