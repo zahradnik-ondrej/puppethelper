@@ -1,6 +1,6 @@
 {
   "name": "puppethelper",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "A Puppeteer utility module for web automation.",
   "main": "dist/index.js",
   "keywords": [
