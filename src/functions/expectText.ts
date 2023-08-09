@@ -4,9 +4,9 @@ import {getText} from './getText'
 import {SelectorNotFound} from '../errors/SelectorNotFound'
 import {waitForSelector} from './waitForSelector'
 
-async function expectText(page: Page, selector: string, text: string): Promise<void> {
+async function expectText(page: Page, selector: string, text: string, timeout: number = 30): Promise<void> {
   try {
-    await waitForSelector(page, selector)
+    await waitForSelector(page, selector, timeout)
     chai.expect(await getText(page, selector)).eql(text)
   } catch(error) {
     if (error instanceof SelectorNotFound) {

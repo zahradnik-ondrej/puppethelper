@@ -8,9 +8,9 @@ const chai_1 = __importDefault(require("chai"));
 const getText_1 = require("./getText");
 const SelectorNotFound_1 = require("../errors/SelectorNotFound");
 const waitForSelector_1 = require("./waitForSelector");
-async function expectText(page, selector, text) {
+async function expectText(page, selector, text, timeout = 30) {
     try {
-        await (0, waitForSelector_1.waitForSelector)(page, selector);
+        await (0, waitForSelector_1.waitForSelector)(page, selector, timeout);
         chai_1.default.expect(await (0, getText_1.getText)(page, selector)).eql(text);
     }
     catch (error) {

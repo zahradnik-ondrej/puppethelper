@@ -1,7 +1,7 @@
 import {Page} from 'puppeteer'
 import {SelectorNotFound} from '../errors/SelectorNotFound'
 
-async function waitForSelector(page: Page, selector: string, timeout: number = 60): Promise<void> {
+async function waitForSelector(page: Page, selector: string, timeout: number = 30): Promise<void> {
   timeout *= 1000
   const TIMEOUT_STEP: number = 500
 

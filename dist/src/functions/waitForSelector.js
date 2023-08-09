@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.waitForSelector = void 0;
 const SelectorNotFound_1 = require("../errors/SelectorNotFound");
-async function waitForSelector(page, selector, timeout = 60) {
+async function waitForSelector(page, selector, timeout = 30) {
     timeout *= 1000;
     const TIMEOUT_STEP = 500;
     while (timeout > 0) {
