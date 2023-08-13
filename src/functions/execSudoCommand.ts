@@ -1,7 +1,7 @@
 import { exec } from 'child_process'
 
-function execSudoCommand(command: string, password: string, done: (error: Error | null, stdout?: string, stderr?: string) => void): void {
-    exec(`echo ${password} | sudo -S ${command}`, { maxBuffer: 1024 * 10000 }, (error: Error | null, stdout: string, stderr: string): void => {
+function execSudoCommand(command: string, password: string) {
+    exec(`echo ${password} | sudo -S ${command}`, { maxBuffer: 1024 * 10000 }, (error, stdout, stderr) => {
         if (error) {
             console.error(error)
         }
@@ -9,7 +9,6 @@ function execSudoCommand(command: string, password: string, done: (error: Error 
             console.warn(stderr)
         }
         console.log(stdout)
-        done(error, stdout, stderr)
     })
 }
 
