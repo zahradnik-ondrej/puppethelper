@@ -1,7 +1,7 @@
-import { exec } from 'child_process'
+import {exec, ExecException} from 'child_process'
 
-function execSudoCommand(command: string, password: string) {
-    exec(`echo ${password} | sudo -S ${command}`, { maxBuffer: 1024 * 10000 }, (error, stdout, stderr) => {
+async function execSudoCommand(command: string, password: string): Promise<void> {
+    exec(`echo ${password} | sudo -S ${command}`, { maxBuffer: 1024 * 10000 }, (error: ExecException | null, stdout: string, stderr: string): void => {
         if (error) {
             console.error(error)
         }
