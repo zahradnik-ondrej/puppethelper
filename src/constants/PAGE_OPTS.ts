@@ -1,5 +1,5 @@
-const PAGE_OPTS = {
-  DEFAULT_TIMEOUT: 20000,
+const PAGE_OPTS: {DEFAULT_TIMEOUT: number} = {
+  DEFAULT_TIMEOUT: 10000,
 }
 
 export {PAGE_OPTS}
