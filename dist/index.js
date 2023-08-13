@@ -20,7 +20,7 @@ __exportStar(require("./src/errors/CustomError"), exports);
 __exportStar(require("./src/errors/SelectorNotFound"), exports);
 __exportStar(require("./src/functions/clear"), exports);
 __exportStar(require("./src/functions/clearManual"), exports);
-__exportStar(require("./src/functions/execSudoCommand"), exports);
+__exportStar(require("./src/functions/executeCommand"), exports);
 __exportStar(require("./src/functions/expectAttribute"), exports);
 __exportStar(require("./src/functions/expectText"), exports);
 __exportStar(require("./src/functions/getAttribute"), exports);
