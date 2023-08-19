@@ -67,7 +67,19 @@ waitForSelector(page: Page, selector: string, timeout: number = 30)
 
 ### Constants:
 * `BROWSER_OPTS`
+```typescript
+const BROWSER_OPTS: {headless: HeadlessOption, slowMo: number, devtools: boolean} = {
+    headless: 'new',
+    slowMo: 1,
+    devtools: false,
+}
+```
 * `PAGE_OPTS`
+```typescript
+const PAGE_OPTS: {DEFAULT_TIMEOUT: number} = {
+  DEFAULT_TIMEOUT: 30000,
+}
+```
 
 ### Scripts:
 * `custom-mocha-spec-reporter.js`

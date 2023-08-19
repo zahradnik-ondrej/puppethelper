@@ -6,6 +6,7 @@
   "keywords": [
     "qa",
     "puppeteer",
+    "mocha",
     "chai",
     "automation",
     "browser"
