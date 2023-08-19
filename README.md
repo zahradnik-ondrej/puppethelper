@@ -63,4 +63,4 @@ waitForSelector(page: Page, selector: string, timeout: number = 30)
 * `PAGE_OPTS`
 
 ### Scripts:
-* `custom-mocha-spec-reporter`
+* `custom-mocha-spec-reporter.js`
