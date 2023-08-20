@@ -16,13 +16,19 @@
 clear(page: Page, selector: string)
 ```
 
+Clears a text field based on the provided **CSS** selector using the **Document** `querySelector()` method.
+
 ```typescript
 clearManual(page: Page, selector: string, attribute: string = 'value')
 ```
 
+Clears a text field based on the provided **CSS** selector by simulating user input of pressing the **Backspace** key.
+
 ```typescript
 click(page: Page, selector: string, timeout: number = 30)
 ```
+
+Clicks on an element based on the provided **CSS** selector.
 
 ```typescript
 executeCommand(command: string, password?: string)
@@ -60,13 +66,14 @@ type(page: Page, selector: string, text: string, timeout: number = 30)
 waitForSelector(page: Page, selector: string, timeout: number = 30)
 ```
 
-
 ### Errors:
 * `CustomError`
 * `SelectorNotFound`
 
 ### Constants:
+
 * `BROWSER_OPTS`
+
 ```typescript
 const BROWSER_OPTS: {headless: HeadlessOption, slowMo: number, devtools: boolean} = {
     headless: 'new',
@@ -74,7 +81,9 @@ const BROWSER_OPTS: {headless: HeadlessOption, slowMo: number, devtools: boolean
     devtools: false,
 }
 ```
+
 * `PAGE_OPTS`
+
 ```typescript
 const PAGE_OPTS: {DEFAULT_TIMEOUT: number} = {
   DEFAULT_TIMEOUT: 30000,
