@@ -4,9 +4,9 @@ import {getAttribute} from './getAttribute'
 import {SelectorNotFound} from '../errors/SelectorNotFound'
 import {waitForSelector} from './waitForSelector'
 
-async function expectAttribute(page: Page, selector: string, attribute: string, value: string, timeout: number = 30): Promise<void> {
+async function expectAttribute(page: Page, selector: string, attribute: string, value: string, type: string = 'css', timeout: number = 30): Promise<void> {
     try {
-        await waitForSelector(page, selector, timeout)
+        await waitForSelector(page, selector, type, timeout)
         chai.expect(await getAttribute(page, selector, attribute)).eql(value)
     } catch(error) {
         if (error instanceof SelectorNotFound) {

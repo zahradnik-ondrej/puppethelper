@@ -8,9 +8,9 @@ const chai_1 = __importDefault(require("chai"));
 const getAttribute_1 = require("./getAttribute");
 const SelectorNotFound_1 = require("../errors/SelectorNotFound");
 const waitForSelector_1 = require("./waitForSelector");
-async function expectAttribute(page, selector, attribute, value, timeout = 30) {
+async function expectAttribute(page, selector, attribute, value, type = 'css', timeout = 30) {
     try {
-        await (0, waitForSelector_1.waitForSelector)(page, selector, timeout);
+        await (0, waitForSelector_1.waitForSelector)(page, selector, type, timeout);
         chai_1.default.expect(await (0, getAttribute_1.getAttribute)(page, selector, attribute)).eql(value);
     }
     catch (error) {
