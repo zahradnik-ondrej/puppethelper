@@ -30,7 +30,9 @@
   },
   "private": false,
   "dependencies": {
-    "chai": "^4.3.7",
+    "chai": "^4.3.7"
+  },
+  "peerDependencies": {
     "puppeteer": "^21.1.0"
   },
   "devDependencies": {
