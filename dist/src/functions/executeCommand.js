@@ -2,25 +2,15 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.executeCommand = void 0;
 const child_process_1 = require("child_process");
-function executeCommand(output = true, command, password) {
+function executeCommand(command, password) {
     return new Promise((resolve, reject) => {
         if (password) {
             command = `echo "${password}" | sudo -S ${command}`;
         }
         const childProcess = (0, child_process_1.spawn)(command, [], {
-            stdio: 'pipe',
+            stdio: 'inherit',
             shell: true
         });
-        if (output) {
-            // @ts-ignore
-            childProcess.stdout?.on('data', (data) => {
-                process.stdout.write(data);
-            });
-            // @ts-ignore
-            childProcess.stderr?.on('data', (data) => {
-                process.stderr.write(data);
-            });
-        }
         childProcess.on('close', (code) => {
             if (code !== 0) {
                 console.log(`The command exited with code ${code}`);
