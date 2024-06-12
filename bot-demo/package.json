@@ -1,10 +1,11 @@
 {
   "name": "demo-bot-search-github",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A puppethelper demonstration bot.",
   "main": "run.ts",
   "keywords": [
     "puppeteer",
+    "utility",
     "module",
     "web",
     "browser",

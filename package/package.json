@@ -1,10 +1,11 @@
 {
   "name": "puppethelper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Puppeteer utility package for web automation.",
   "main": "dist/index.js",
   "keywords": [
     "puppeteer",
+    "utility",
     "module",
     "web",
     "browser",
