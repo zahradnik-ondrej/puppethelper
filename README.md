@@ -4,7 +4,7 @@
 
 ### A Puppeteer utility package for web automation.
 
-_(The instructions below have been made to work on **Linux** operating systems, specifically on **Ubuntu 22.04**)_
+*(The instructions below have been made to work on **Linux** operating systems, specifically on **Ubuntu 22.04** along with the prerequisite of having **Git** installed on your system.)*
 
 </div>
 
@@ -14,13 +14,11 @@ _(The instructions below have been made to work on **Linux** operating systems, 
 
 1. `sudo apt update`
 
-2. `sudo apt upgrade -y`
+2. `wget -qO- https://deb.nodesource.com/setup_20.x | sudo -E bash -`
 
-3. `wget -qO- https://deb.nodesource.com/setup_20.x | sudo -E bash -`
+3. `sudo apt install -y nodejs`
 
-4. `sudo apt install -y nodejs`
-
-5. `npm install puppethelper`
+4. `npm install puppethelper`
 
 ---
 
@@ -28,13 +26,11 @@ _(The instructions below have been made to work on **Linux** operating systems, 
 
 1. Run the commands shown in [Installation of the package](https://github.com/zahradnik-ondrej/puppethelper?tab=readme-ov-file#installation-of-the-package).
 
-2. `sudo apt install git`
+2. `git clone https://github.com/zahradnik-ondrej/puppethelper.git`
 
-3. `git clone https://github.com/zahradnik-ondrej/puppethelper.git`
+3. `cd puppethelper/bot-demo`
 
-4. `cd puppethelper/bot-demo`
-
-5. `npm start`
+4. `npm start`
 
 ---
 
