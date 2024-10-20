@@ -1,0 +1,54 @@
+{
+  "name": "demo-bot-search-github",
+  "version": "1.0.0",
+  "description": "A puppethelper demonstration bot.",
+  "main": "run.ts",
+  "keywords": [
+    "puppeteer",
+    "utility",
+    "module",
+    "web",
+    "browser",
+    "automation",
+    "helper",
+    "qa",
+    "puppethelper",
+    "demo",
+    "demonstration",
+    "bot"
+  ],
+  "homepage": "https://github.com/zahradnik-ondrej/puppethelper#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zahradnik-ondrej/puppethelper.git"
+  },
+  "author": {
+    "name": "Ondrej Zahradnik",
+    "email": "zahradnik.ondrej@protonmail.com",
+    "url": "https://ondrejzahradnik.cz"
+  },
+  "license": "GNU General Public License v3.0",
+  "bugs": {
+    "url": "https://github.com/zahradnik-ondrej/puppethelper/issues"
+  },
+  "scripts": {
+    "serve": "http-server ../web-demo",
+    "run": "ts-node run.ts",
+    "start": "concurrently -k \"npm run serve\" \"wait-on http://localhost:8080 && npm run run\""
+  },
+  "private": false,
+  "dependencies": {
+    "puppeteer": "^22.10.1",
+    "puppethelper": "^1.0.0",
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.2.0",
+    "http-server": "^14.1.1",
+    "ts-node": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "dist"
+  ]
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search GitHub</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Search GitHub repositories</h1>
+    <form id="search-form" action="https://github.com/search" method="get">
+      <input
+        type="text"
+        name="q"
+        placeholder="tensorflow"
+        oninput="adjustWidth(this)"
+      />
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>

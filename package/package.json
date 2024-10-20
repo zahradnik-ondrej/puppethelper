@@ -1,0 +1,44 @@
+{
+  "name": "puppethelper",
+  "version": "1.0.0",
+  "description": "A Puppeteer utility package for web automation.",
+  "main": "dist/index.js",
+  "keywords": [
+    "puppeteer",
+    "utility",
+    "module",
+    "web",
+    "browser",
+    "automation",
+    "helper",
+    "qa"
+  ],
+  "homepage": "https://github.com/zahradnik-ondrej/puppethelper#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zahradnik-ondrej/puppethelper.git"
+  },
+  "author": {
+    "name": "Ondrej Zahradnik",
+    "email": "zahradnik.ondrej@protonmail.com",
+    "url": "https://ondrejzahradnik.cz"
+  },
+  "license": "GNU General Public License v3.0",
+  "bugs": {
+    "url": "https://github.com/zahradnik-ondrej/puppethelper/issues"
+  },
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "private": false,
+  "peerDependencies": {
+    "puppeteer": "^22.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "dist"
+  ]
+}

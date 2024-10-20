@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  color: white;
+  flex-direction: column;
+}
+
+h1,
+input,
+button {
+  margin: 10px 0;
+}
+
+input[type='text'] {
+  min-width: 10ch;
+  max-width: 30ch;
+  width: auto;
+  font-family: 'Courier New', Courier, monospace;
+}

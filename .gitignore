@@ -1,0 +1,6 @@
+package/dist
+package/node_modules
+package/package-lock.json
+
+bot-demo/node_modules
+bot-demo/package-lock.json
